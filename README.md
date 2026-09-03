@@ -113,8 +113,13 @@ Invece di leggere tutte le 500 immagini di una classe e poi passare alla success
 Il training gira per **6 epoche**. Al termine viene eseguita una valutazione sulle 20 immagini per classe della cartella `/array/outputTest`, calcolando l'accuratezza come percentuale di predizioni corrette sul totale.
 
 I pesi finali vengono salvati in `/pesi.bin` (formato binario, tramite `fwrite`), così da poterli eventualmente ricaricare in futuro con `carica_pesi()` senza dover rieseguire il training da zero.
+## Risultati
 
-# Fine
+L'accuratezza ottenuta dai percettroni sul dataset di testing è stata dell'**81%**, con **162 immagini classificate correttamente su 200**.
+
+Il risultato è interessante considerando le risorse molto limitate del Nintendo DS Lite e il fatto che l'addestramento è stato effettuato direttamente sul dispositivo.
+
+## Fine
 
 Questo progetto è nato e cresciuto poco alla volta, principalmente per interesse e curiosità personale.
 

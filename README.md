@@ -113,3 +113,13 @@ Invece di leggere tutte le 500 immagini di una classe e poi passare alla success
 Il training gira per **6 epoche**. Al termine viene eseguita una valutazione sulle 20 immagini per classe della cartella `/array/outputTest`, calcolando l'accuratezza come percentuale di predizioni corrette sul totale.
 
 I pesi finali vengono salvati in `/pesi.bin` (formato binario, tramite `fwrite`), così da poterli eventualmente ricaricare in futuro con `carica_pesi()` senza dover rieseguire il training da zero.
+
+# Fine
+
+Questo progetto è nato e cresciuto poco alla volta, principalmente per interesse e curiosità personale.
+
+Non vuole essere un progetto serio o una soluzione particolarmente efficiente: è stato realizzato semplicemente per passione e per il piacere di sperimentare.
+
+L'obiettivo principale è stato quindi sperimentare, imparare qualcosa di nuovo e vedere fin dove fosse possibile spingersi con le risorse a disposizione.
+
+In futuro, il progetto potrebbe evolversi in qualcosa di più complesso, magari introducendo nuove funzionalità o sperimentando algoritmi e approcci differenti.

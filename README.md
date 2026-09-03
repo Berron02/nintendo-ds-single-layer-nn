@@ -119,6 +119,10 @@ L'accuratezza ottenuta dai percettroni sul dataset di testing è stata dell'**81
 
 Il risultato è interessante considerando le risorse molto limitate del Nintendo DS Lite e il fatto che l'addestramento è stato effettuato direttamente sul dispositivo.
 
+<p align="center">
+  <img src="nds.jpeg" alt="Risultati dell'addestramento" width="200">
+</p>
+
 ## Fine
 
 Questo progetto è nato e cresciuto poco alla volta, principalmente per interesse e curiosità personale.

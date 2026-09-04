@@ -35,17 +35,17 @@ Una volta verificata la compatibilità della R4, è possibile procedere con la c
 La versione del kernel/firmware per questo progetto è basata su YSMenu, adattata per card clone R4i (driver DLDI r4i.di), con struttura compatibile anche TTMenu.
 ## Impostazione dell'ambiente di lavoro
 
-Poiché il **Nintendo DS** è una piattaforma ormai datata, configurare direttamente su un sistema moderno tutti gli strumenti necessari per sviluppare applicazioni homebrew può risultare complesso. Le versioni originali dei toolchain e delle relative dipendenze, infatti, non sono sempre facilmente reperibili o compatibili con i sistemi operativi attuali.
+Poiché il **Nintendo DS** è una piattaforma ormai datata, le versioni originali dei toolchain e delle relative dipendenze non sono sempre facilmente reperibili o compatibili con i sistemi operativi attuali.
 
-Per semplificare la configurazione dell'ambiente di sviluppo viene utilizzato **Docker**, che permette di raccogliere all'interno di un container tutti gli strumenti necessari per la compilazione del progetto.
+Per semplificare la configurazione dell'ambiente di sviluppo ho utilizzato **Docker**, che permette di raccogliere all'interno di un container tutti gli strumenti necessari per la compilazione del progetto.
 
-L'immagine Docker utilizzata dal progetto è:
+L'immagine Docker utilizzata è:
 
 ```text
 nds-projects-nds
 ```
 
-## Sistemazione del dataset
+## Preparazione del dataset
 
 Visto la semplicità del percettrone, ho optato per un dataset semplice e tradizionale: **MNIST**, una raccolta di immagini raffiguranti numeri da `0` a `9` scritti a mano.
 
@@ -87,9 +87,9 @@ La struttura della microSD è la seguente:
 └── outputTest9.txt
 ```
 
-`/output` contiene le 500 immagini per classe usate per il training, `/array/outputTest` le 20 immagini per classe usate per la valutazione finale.
+`/array/outputTrain` contiene le 500 immagini per classe usate per il training, `/array/outputTest` le 20 immagini per classe usate per la valutazione finale.
 
-Ad esempio, una riga del file può avere il seguente formato:
+Ad esempio, una riga del file ha il seguente formato:
 
 ```text
 0 0 0 0 0 0 0 0 0 18 0 0 1 8 1 1 0 0 ...
@@ -129,7 +129,3 @@ Il risultato è interessante considerando le risorse molto limitate del Nintendo
 Questo progetto è nato e cresciuto poco alla volta, principalmente per interesse e curiosità personale.
 
 Non vuole essere un progetto serio o una soluzione particolarmente efficiente: è stato realizzato semplicemente per passione e per il piacere di sperimentare.
-
-L'obiettivo principale è stato quindi sperimentare, imparare qualcosa di nuovo e vedere fin dove fosse possibile spingersi con le risorse a disposizione.
-
-In futuro, il progetto potrebbe evolversi in qualcosa di più complesso, magari introducendo nuove funzionalità o sperimentando algoritmi e approcci differenti.

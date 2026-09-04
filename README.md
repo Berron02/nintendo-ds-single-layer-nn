@@ -32,6 +32,7 @@ La struttura finale della microSD dipenderà dal modello e dal software utilizza
 
 Una volta verificata la compatibilità della R4, è possibile procedere con la configurazione dell'ambiente di sviluppo.
 
+La versione del kernel/firmware per questo progetto è basata su YSMenu, adattata per card clone R4i (driver DLDI r4i.di), con struttura compatibile anche TTMenu.
 ## Impostazione dell'ambiente di lavoro
 
 Poiché il **Nintendo DS** è una piattaforma ormai datata, configurare direttamente su un sistema moderno tutti gli strumenti necessari per sviluppare applicazioni homebrew può risultare complesso. Le versioni originali dei toolchain e delle relative dipendenze, infatti, non sono sempre facilmente reperibili o compatibili con i sistemi operativi attuali.

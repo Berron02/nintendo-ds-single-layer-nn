@@ -61,7 +61,7 @@ Per semplificare la gestione del dataset direttamente sul Nintendo DS, ho quindi
 La struttura della microSD è la seguente:
 
 ```text
-/output
+/array/outputTrain
 ├── output0.txt
 ├── output1.txt
 ├── output2.txt
